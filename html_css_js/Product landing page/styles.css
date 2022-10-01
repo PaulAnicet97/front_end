@@ -1,0 +1,241 @@
+:root {
+    --color1: #eff8e2;
+    --color2: #419A1C;
+    --color3: #153607;
+    --color4: #23022E;
+    --color5: #573280;
+}
+* {
+    margin: 0px;
+    color: var(--color5);
+}
+body {
+    background-color: var(--color1);
+    margin: 0px;
+}
+#header {
+     width: 100%;
+     background-color: var(--color2) ;
+     position:fixed;
+     top: 0;
+     height: 80px;
+     display: flex;
+     align-items: center;
+     z-index: 10;
+   
+}
+#top-page{
+    margin : 0px;
+    position: relative;
+    display: flex;
+}
+  #nav-bar {
+   display: flex;
+   list-style: none;
+   align-items: center ;
+   justify-content: flex-end;
+   width: 300px;
+   margin-left: 65%;
+
+}
+
+#nav-bar > li {
+    display: flex;
+    padding: 0px 10px 0px 10px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+#header-img {
+    height: 120px;
+}
+a{
+    text-decoration: none;
+    color: var(--color1);
+}
+
+    
+main {
+   
+    margin-top: 100px;
+    position:relative;
+    
+}
+h1 {
+    position: relative;
+    text-align: center;
+    width: 100%
+}
+form{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+}
+
+    #email{
+ 
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 350px;
+   
+}
+ #submit {  
+    width: 100px;
+    height: 30px;
+    background-color:var(--color1);
+    border-color:var(--color1); 
+    cursor: pointer;
+
+}
+#submit :hover {
+    background-color: var(--color2);
+    color: #eff8e2;
+
+}
+
+.page {
+    
+ 
+   margin-left: 30%;
+   margin-top: 30px;
+   max-width: 100%;
+    height: auto;
+}
+
+.mgb  {
+    margin-bottom: 90px;
+}
+@media (max-width:706px){ .page { font-size:10px} .mgb {margin-bottom: 20px;}}
+
+.page > .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 20vw;
+    color:var(--color2);
+}
+
+.page > .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 120px;
+    padding: 5px;
+   
+    margin-top: -15%;
+}
+
+@media (max-width: 550px) { .page .description {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    height: 150px;
+}}
+
+
+
+#video {
+
+display: block;
+margin :0 auto;
+}
+
+#grid {
+    display: flex;
+	justify-content: space-around;
+    margin-top: 2rem;
+}
+
+#grid > .tab  {
+
+    height: 25rem;
+    width: 20rem;
+    border-radius: 5px;
+    margin-right: 10px;
+     border: solid var(--color5);
+    border-width:1px;   
+}
+
+.titre {
+    background-color: var(--color2);
+    text-align: center;
+    height: 50px;
+    color: var(--color1);
+    padding-top: 12px;
+    margin: 0;
+}
+.price {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+
+.button-cont {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    align-items: center;
+ 
+
+}
+
+
+
+
+
+
+ol >li {
+    list-style: none;
+}
+ol {
+    line-height: 2;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+
+}
+
+
+
+
+#footer {   
+    background-color: var(--color5);
+    margin-top: 20px;
+    margin-bottom: 0px;
+    
+    
+}
+ footer>ul  {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-left: 67% ;
+    align-items: center;
+    
+
+    
+}
+
+footer > ul > li {
+    color: var(--color1);
+    padding : 0 10px;
+  
+    
+    
+}
+.para > p {
+   
+    height: 10px;
+    color: var(--color1);
+    text-align: right;
+    background-color:var(--color5);
+    padding-bottom: 10px;
+}

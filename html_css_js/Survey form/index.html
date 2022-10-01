@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Formulaire Hotêl Harmonie</h1>
+    <p id="description">Merci de nous aider à améliorer nos services</p>
+    <div>
+      <form action="" id="survey-form">
+        <label id="name-label" for="name">Nom complet</label>
+        <input class="inputtop" type="text" id="name" name="name" placeholder="Nom" required />
+        <label  id="email-label" for="email"> Email </label>
+        <input class="inputtop"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="E-mail"
+          required
+        />
+        <label id="number-label" for="number"> Âge (Facultatif)</label>
+        <input class="inputtop"
+          type="number"
+          id="number"
+          name="age"
+          min="18"
+          max="99"
+          placeholder="Âge"
+        />
+        <div><p>Où avez vous connu l'hotêl Harmonie?</p>
+        <select name="role" id="dropdown">
+          <option value="Amis">Amis</option>
+          <option value="Internet">Internet</option>
+          <option value="Affiche">Affiche</option>
+          <option value="Radio">Radio</option>
+          <option value="Autre">Autre</option></div>
+        </select>
+        <p>Recomenderiez vous l'hotel harmonie ?</p>
+        <div class="div1">
+        <input type="radio" name="choice" value="oui" checked />
+        <label for="choice">Oui</label>
+         <br>
+        <input type="radio" name="choice" value="Non" />
+        <label for="choice">Non</label> <br>
+        <input type="radio" name="choice" value="j'hésite" />
+        <label for="choice">J'hésite</label> </div>
+        
+     
+            <p>Qu'avez vous aimé parmis nos servives ? </p>
+        <div class="div2">
+             <label ><input type="checkbox" name="service" value= "le-service-client"> Le service client</label> <br>
+             <label></label><input type="checkbox" name="emplacement" value="emplacement"> l'emplacement</label><br>
+             <label ><input type="checkbox" name="transport" value="le-service-transport"> Le service transport</label><br>
+             <label><input type="checkbox" name="cave" value="Le-cave"> Le cave</label><br>
+             <label><input type="checkbox" name="payement" value="Les-moyens-de-payements"> Les moyens de payements</label>
+        </div>
+        <div>
+            <p>Avez vous des suggestions ?</p>
+            <textarea name="sugestion" id="sugestion" cols="30" rows="10" placeholder="Entrez vos commentaires..."></textarea>
+        </div>
+        <button id= "submit" type="submit">Valider</button>
+      </form>
+    </div>
+  </body>
+</html>

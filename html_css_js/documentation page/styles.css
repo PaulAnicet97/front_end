@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,500&display=swap");
+
+:root {
+  --color1: #227c9d;
+  --color2: #17c3b2;
+  --color3: #ffcb77;
+  --color4: #fef9ef;
+  --color5: #fe6d73;
+}
+* {
+  margin: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: white;
+  min-height: 100%;
+  position: relative;
+  overflow: auto;
+}
+#navbar {
+  width: 280px;
+  height: 100%;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  position: fixed;
+  border-right: 3px solid var(--color2);
+
+  top: 0;
+}
+
+#navbar a {
+  display: block;
+  text-decoration: none;
+  border: solid 1px var(--color2);
+  border-right: none;
+  padding: 20px;
+  color: black;
+}
+#navbar a.active {
+  color: white;
+}
+#navbar a:hover:not(.active) {
+  background-color: var(--color2);
+  color: white;
+  transition: 0.4s;
+}
+main {
+  position: relative;
+  margin-left: 280px;
+  height: 100%;
+  padding: 1px 16px;
+  /* overflow-y: scroll; */
+  /* top: 0; */
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-align: justify;
+}
+main a {
+  text-decoration: none;
+  color: var(--color2);
+}
+
+article {
+  padding: 15px;
+}
+#tt {
+  position: fixed;
+  z-index: 1;
+  color: var(--color4);
+  width: 280px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 25px;
+  top: 0;
+  background-color: var(--color2);
+}
+header {
+  font-weight: bold;
+}
+
+#fimg1 {
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  margin-top: -20%;
+  margin-left: 70%;
+  top: 450px;
+}
+@media (max-width: 1014px) {
+  main {
+    overflow: hidden;
+  }
+  #fimg1 {
+    width: 100px;
+  }
+}
+@media (max-width: 678px) {
+  #fimg1 {
+    display: none;
+  }
+  #navbar,
+  #tt {
+    width: 130px;
+  }
+  main {
+    margin-left: 120px;
+  }
+}
+
+#fimg2 {
+  width: 170px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  margin-top: -10%;
+  margin-left: 65%;
+  top: 850px;
+}
+@media (max-width: 1255px) {
+  #fimg2 {
+    display: none;
+  }
+}
+
+
+#fimg3 {
+  width: 170px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  margin-top: 25%;
+  margin-left: 65%;
+  top: 850px;
+}
+@media (max-width: 1255px) {
+  #fimg3 {
+    display: none;
+  }
+}
+
+
+#fimg4 {
+  width: 170px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  margin-top: 53%;
+  margin-left: 65%;
+  top: 850px;
+}
+@media (max-width: 1255px) {
+  #fimg4 {
+    display: none;
+  }
+}
+
+#fimg5 {
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  margin-top: 80%;
+  margin-left: 70%;
+  top: 850px;
+}
+@media (max-width: 1255px) {
+  #fimg5 {
+    display: none;
+  }
+}
+
+
+#fimg6 {
+  width: 170px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  margin-top: 125%;
+  margin-left: 65%;
+  top: 850px;
+}
+@media (max-width: 1255px) {
+  #fimg6 {
+    display: none;
+  }
+}
+
+
+#fimg7 {
+  width: 170px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  margin-top: 160%;
+  margin-left: 65%;
+  top: 850px;
+}
+@media (max-width: 1255px) {
+  #fimg7 {
+    display: none;
+  }
+}
+
+#fimg8 {
+  width: 170px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  margin-top: 185%;
+  margin-left: 65%;
+  top: 850px;
+}
+@media (max-width: 1255px) {
+  #fimg8 {
+    display: none;
+  }
+}
+
+
+#fimg9 {
+  width: 170px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  margin-top: 230%;
+  margin-left: 65%;
+  top: 850px;
+}
+@media (max-width: 1255px) {
+  #fimg9 {
+    display: none;
+  }
+}
+
+
+#fimg10 {
+  width: 170px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  margin-top: 258%;
+  margin-left: 65%;
+  top: 850px;
+}
+@media (max-width: 1255px) {
+  #fimg10 {
+    display: none;
+  }
+}
+
+#footer {
+  background-color: var(--color2);
+  position: relative;
+  margin-left: 280px;
+  display: block;
+  max-height: 50px;
+  display: flex;
+  justify-content: right;
+  color: #fef9ef;
+}
+footer a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: #fef9ef;
+}
+header {
+  padding: 10px;
+  font-weight: 500 px;
+  font-size: 20px;
+}
+.preparation {
+  padding: 10px;
+}
+#ref {
+  padding-left: 10px;
+  font-size: 12px;
+  display: flex;
+  justify-content: right;
+  
+}
